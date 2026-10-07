@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perelló Foods — Spanish Simplicity Since 1964</title>
+<meta name="description" content="Gordal olives, pickles, pulses and olive oil. Spanish simplicity since 1964, from a single large green olive to your table.">
+<meta name="theme-color" content="#F6F1E7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="gOlive" cx="38%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#B7C46E"/>
+      <stop offset=".45" stop-color="#8A9A4B"/>
+      <stop offset="1" stop-color="#4C5A26"/>
+    </radialGradient>
+    <radialGradient id="gOliveDark" cx="38%" cy="30%" r="80%">
+      <stop offset="0" stop-color="#6B7A3A"/>
+      <stop offset=".5" stop-color="#3F4A2A"/>
+      <stop offset="1" stop-color="#232C14"/>
+    </radialGradient>
+    <linearGradient id="gTin" x1="0" x2="1">
+      <stop offset="0" stop-color="#9aa08f"/>
+      <stop offset=".25" stop-color="#e9ece1"/>
+      <stop offset=".6" stop-color="#b9bfae"/>
+      <stop offset="1" stop-color="#7d8472"/>
+    </linearGradient>
+    <linearGradient id="gGlass" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".55"/>
+      <stop offset=".2" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".85" stop-color="#fff" stop-opacity=".02"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".35"/>
+    </linearGradient>
+    <symbol id="olive" viewBox="0 0 200 260">
+      <path d="M100 22c-4-10 2-18 12-20" fill="none" stroke="#4C5A26" stroke-width="5" stroke-linecap="round"/>
+      <path d="M100 20c52 0 90 52 90 118 0 66-38 120-90 120S10 204 10 138C10 72 48 20 100 20z" fill="url(#gOlive)"/>
+      <path d="M100 20c52 0 90 52 90 118 0 66-38 120-90 120" fill="none" stroke="#2f3a18" stroke-opacity=".25" stroke-width="2"/>
+      <ellipse cx="62" cy="86" rx="18" ry="34" fill="#fff" fill-opacity=".28" transform="rotate(14 62 86)"/>
+      <ellipse cx="148" cy="190" rx="10" ry="18" fill="#2f3a18" fill-opacity=".18" transform="rotate(-20 148 190)"/>
+    </symbol>
+    <symbol id="olive-dark" viewBox="0 0 200 260">
+      <path d="M100 20c52 0 90 52 90 118 0 66-38 120-90 120S10 204 10 138C10 72 48 20 100 20z" fill="url(#gOliveDark)"/>
+      <ellipse cx="62" cy="86" rx="16" ry="30" fill="#fff" fill-opacity=".14" transform="rotate(14 62 86)"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<!-- Loader curtain -->
+<div class="curtain" aria-hidden="true">
+  <svg class="curtain-olive" viewBox="0 0 200 260"><use href="#olive"/></svg>
+  <span class="curtain-word">Perelló</span>
+</div>
+
+<!-- Floating island nav -->
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="logo" aria-label="Perelló home">
+      <svg viewBox="0 0 200 260" aria-hidden="true"><use href="#olive"/></svg>
+      <span>Perelló</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#story">Story</a></li>
+      <li><a href="#varieties">Olives</a></li>
+      <li><a href="#range">Range</a></li>
+      <li><a href="#stockists">Where to buy</a></li>
+    </ul>
+    <a href="#trade" class="btn btn-sm btn-ink nav-cta"><span>Trade</span><i class="btn-ico"><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-inner">
+    <p class="eyebrow light">Menu</p>
+    <ul>
+      <li><a href="#story"><span>01</span>The Perelló story</a></li>
+      <li><a href="#varieties"><span>02</span>Olive varieties</a></li>
+      <li><a href="#range"><span>03</span>The range</a></li>
+      <li><a href="#recipes"><span>04</span>At the table</a></li>
+      <li><a href="#stockists"><span>05</span>Where to buy</a></li>
+      <li><a href="#trade"><span>06</span>Trade customers</a></li>
+    </ul>
+    <p class="menu-foot">Spanish Simplicity Since 1964</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-film" aria-hidden="true">
+    <div class="film-frame">
+      <video id="heroVideo" muted loop playsinline preload="auto" disablepictureinpicture tabindex="-1">
+        <source src="assets/hero.mp4" type="video/mp4">
+      </video>
+      <div class="film-veil"></div>
+    </div>
+    <div class="badge-spin">
+      <svg viewBox="0 0 120 120">
+        <defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+        <text><textPath href="#circ">Gordal &middot; Manzanilla &middot; Empeltre &middot; Arbequina &middot; </textPath></text>
+      </svg>
+      <b>64</b>
+    </div>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow rv"><span class="dot"></span>Since 1964 &middot; Barcelona</p>
+      <h1 class="display">
+        <span class="line"><span>One olive.</span></span>
+        <span class="line"><span>A lifetime of</span></span>
+        <span class="line"><span><em>Spanish simplicity.</em></span></span>
+      </h1>
+      <p class="lede rv" style="--d:.5s">It began with a single large green olive, the gordal, on a market stall. Sixty years on, we still choose, cure and pack with the same care, then leave the rest to the olive.</p>
+      <div class="hero-cta rv" style="--d:.65s">
+        <a href="#range" class="btn btn-red"><span>Explore the range</span><i class="btn-ico"><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a>
+        <a href="#story" class="link-u">Read our story</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span>Scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Olives</span><i></i><span>Olive Oil</span><i></i><span>Pickles</span><i></i><span>Pulses</span><i></i><span>Crackers</span><i></i><span>Nuts &amp; Snacks</span><i></i>
+    <span>Olives</span><i></i><span>Olive Oil</span><i></i><span>Pickles</span><i></i><span>Pulses</span><i></i><span>Crackers</span><i></i><span>Nuts &amp; Snacks</span><i></i>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <div class="story-sticky">
+      <p class="eyebrow rv">The Perelló story</p>
+      <h2 class="h2 rv">A name, a market stall, and an olive worth<br>the <em>fuss</em>.</h2>
+      <p class="muted rv">Few brands can point to one object and say: that is us. Ours is a large green gordal olive, drawn once in 1964 and kept ever since.</p>
+      <svg class="story-path" viewBox="0 0 40 600" preserveAspectRatio="none" aria-hidden="true">
+        <path class="track" d="M20 0 C 40 100, 0 200, 20 300 S 40 500, 20 600"/>
+        <path class="draw" d="M20 0 C 40 100, 0 200, 20 300 S 40 500, 20 600"/>
+      </svg>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl rv">
+        <span class="tl-year">1964</span>
+        <h3>Gaspar names the olive.</h3>
+        <p>A young Gaspar Perelló builds his business and his brand on his own surname, with the simple image of a single large green olive: the gordal. He trained in Alcalá de Guadaíra, learning how to choose olives the southern Spanish way.</p>
+      </li>
+      <li class="tl rv">
+        <span class="tl-year">The stand</span>
+        <h3>Barcelona's Boqueria.</h3>
+        <p>From an olive curing and packing facility, Gaspar supplies the Boqueria market with olives and pickles: gordal, manzanilla, empeltre and arbequina, north and south of Spain on one counter. His wife and partner, María Ribó, works beside him.</p>
+      </li>
+      <li class="tl rv">
+        <span class="tl-year">Early 1990s</span>
+        <h3>A stall worth a detour.</h3>
+        <p>Monika Linton of Brindisa, searching for real Spanish food to bring to London, finds the Perelló stand. Three decades of working together follow.</p>
+      </li>
+      <li class="tl rv">
+        <span class="tl-year">Today</span>
+        <h3>Same olive, bigger table.</h3>
+        <p>When Gaspar and María retire, Brindisa takes up stewardship of the brand. The range grows to pickles, nuts, snacks, olive oil crackers and pulses, with the same promise: carefully chosen, cooked to perfection, never overcomplicated.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- VARIETIES -->
+<section class="varieties" id="varieties">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow light rv">Four olives, one stall</p>
+      <h2 class="h2 rv">Pick a variety.<br><em>Taste the place.</em></h2>
+    </div>
+    <div class="acc" id="acc">
+      <article class="acc-item is-open" tabindex="0">
+        <div class="acc-art"><svg viewBox="0 0 200 260"><use href="#olive"/></svg></div>
+        <div class="acc-body">
+          <span class="acc-no">01</span>
+          <h3>Gordal</h3>
+          <p class="acc-tag">The one on our label</p>
+          <p class="acc-text">Large, fleshy and mild. The olive Gaspar built the brand around, and the reason we still call it Spanish simplicity.</p>
+          <span class="acc-meta">South &middot; Seville</span>
+        </div>
+      </article>
+      <article class="acc-item" tabindex="0">
+        <div class="acc-art"><svg viewBox="0 0 200 260"><use href="#olive"/></svg></div>
+        <div class="acc-body">
+          <span class="acc-no">02</span>
+          <h3>Manzanilla</h3>
+          <p class="acc-tag">The Mediterranean classic</p>
+          <p class="acc-text">Small, firm and made for the bar counter. Our Manzanilla Picante brings a slow, warm chilli kick.</p>
+          <span class="acc-meta">South &middot; Andalucía</span>
+        </div>
+      </article>
+      <article class="acc-item" tabindex="0">
+        <div class="acc-art"><svg viewBox="0 0 200 260"><use href="#olive-dark"/></svg></div>
+        <div class="acc-body">
+          <span class="acc-no">03</span>
+          <h3>Empeltre</h3>
+          <p class="acc-tag">A northern original</p>
+          <p class="acc-text">A soft, dark olive from the north of Spain, sweet and gentle on the palate.</p>
+          <span class="acc-meta">North &middot; Aragón</span>
+        </div>
+      </article>
+      <article class="acc-item" tabindex="0">
+        <div class="acc-art"><svg viewBox="0 0 200 260"><use href="#olive-dark"/></svg></div>
+        <div class="acc-body">
+          <span class="acc-no">04</span>
+          <h3>Arbequina</h3>
+          <p class="acc-tag">Small and buttery</p>
+          <p class="acc-text">A tiny Catalan olive, round and gentle. Perfect for the Barcelona stall it was sold from.</p>
+          <span class="acc-meta">North &middot; Catalunya</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RANGE -->
+<section class="range" id="range">
+  <div class="wrap">
+    <div class="sec-head split">
+      <div>
+        <p class="eyebrow rv">The range</p>
+        <h2 class="h2 rv">Big taste. <em>Minimal fuss.</em></h2>
+      </div>
+      <div class="range-ctrl rv">
+        <button class="rbtn" id="prev" aria-label="Previous products"><svg viewBox="0 0 24 24"><use href="#left"/></svg></button>
+        <button class="rbtn" id="next" aria-label="Next products"><svg viewBox="0 0 24 24"><use href="#right"/></svg></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="filters wrap rv" role="tablist" aria-label="Filter products">
+    <button class="chip is-on" data-f="all" role="tab">All</button>
+    <button class="chip" data-f="Olives" role="tab">Olives</button>
+    <button class="chip" data-f="Pickles" role="tab">Pickles</button>
+    <button class="chip" data-f="Pulses" role="tab">Pulses</button>
+  </div>
+
+  <div class="rail" id="rail" tabindex="0" aria-label="Products">
+    <div class="rail-track" id="railTrack"></div>
+  </div>
+  <p class="rail-empty" id="railEmpty" hidden>Nothing in this shelf yet. Try another category.</p>
+
+  <div class="wrap pantry">
+    <p class="eyebrow rv">Also from the pantry</p>
+    <ul class="pantry-list">
+      <li class="rv"><a href="https://perellofoods.com/products/olive-oil/" target="_blank" rel="noopener"><span>Extra Virgin Olive Oil</span><em>Fruity, peppery</em><i><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a></li>
+      <li class="rv"><a href="https://perellofoods.com/products/crackers/" target="_blank" rel="noopener"><span>Olive Oil Crackers</span><em>For the board</em><i><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a></li>
+      <li class="rv"><a href="https://perellofoods.com/products/nuts-and-snacks/" target="_blank" rel="noopener"><span>Nuts &amp; Snacks</span><em>Salted and simple</em><i><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- AT THE TABLE -->
+<section class="table" id="recipes">
+  <div class="wrap table-grid">
+    <div class="table-copy">
+      <p class="eyebrow light rv">At the table</p>
+      <h2 class="h2 rv">Open a jar.<br>That's <em>dinner</em>.</h2>
+      <p class="rv">Spanish cooking is about good ingredients left alone. Here are three ways to put ours to work.</p>
+      <a href="https://perellofoods.com/category/recipes/" class="btn btn-cream rv" target="_blank" rel="noopener"><span>All recipes</span><i class="btn-ico"><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></a>
+    </div>
+    <div class="recipes">
+      <article class="rec rv">
+        <span class="rec-no">i.</span>
+        <h3>The bar-counter plate</h3>
+        <p>Cocktail Picante olives, pickled garlic and a few slices of cured meat. Five minutes, no cooking.</p>
+        <span class="rec-tag">5 min &middot; Tapas</span>
+      </article>
+      <article class="rec rv">
+        <span class="rec-no">ii.</span>
+        <h3>Warm chickpeas, olive oil</h3>
+        <p>Lechoso chickpeas heated gently with garlic, finished with fruity extra virgin olive oil and good bread.</p>
+        <span class="rec-tag">10 min &middot; Pulses</span>
+      </article>
+      <article class="rec rv">
+        <span class="rec-no">iii.</span>
+        <h3>Butter beans, chilli, lemon</h3>
+        <p>Creamy beans, a few guindilla chillies, lemon and herbs. Eat warm or cold from the fridge.</p>
+        <span class="rec-tag">10 min &middot; Pulses</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- STOCKISTS -->
+<section class="stockists" id="stockists">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow rv">Where to buy</p>
+      <h2 class="h2 rv">Find us at a <em>good counter</em>.</h2>
+    </div>
+    <ul class="stock-list">
+      <li class="rv"><span class="s-name">Brindisa</span><span class="s-note">Our stewards and a champion of Spanish food in the UK since the early 1990s.</span><a href="https://www.brindisa.com" target="_blank" rel="noopener" class="s-go">Visit<svg viewBox="0 0 24 24"><use href="#arrow"/></svg></a></li>
+      <li class="rv"><span class="s-name">ARC Iberico Imports</span><span class="s-note">Importer and stockist of Perelló for restaurants and delis.</span><a href="https://perellofoods.com/where-to-buy/" target="_blank" rel="noopener" class="s-go">Visit<svg viewBox="0 0 24 24"><use href="#arrow"/></svg></a></li>
+      <li class="rv"><span class="s-name">Finigate</span><span class="s-note">Trade and retail stockist.</span><a href="https://perellofoods.com/where-to-buy/" target="_blank" rel="noopener" class="s-go">Visit<svg viewBox="0 0 24 24"><use href="#arrow"/></svg></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- TRADE -->
+<section class="trade" id="trade">
+  <div class="wrap trade-grid">
+    <div class="trade-copy">
+      <p class="eyebrow light rv">Trade customers</p>
+      <h2 class="h2 rv">Stock the olive<br>that <em>sells itself</em>.</h2>
+      <p class="rv">Restaurants, delis and shops across the world already trust Perelló. Tell us about your counter and we'll point you to the right stockist.</p>
+      <svg class="trade-olive" viewBox="0 0 200 260" aria-hidden="true"><use href="#olive"/></svg>
+    </div>
+    <div class="bezel rv">
+      <form class="form" id="tradeForm" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Elena Marqués" required>
+          <small class="err" data-for="name"></small>
+        </div>
+        <div class="field">
+          <label for="biz">Business</label>
+          <input id="biz" name="biz" type="text" autocomplete="organization" placeholder="La Bodega de Elena" required>
+          <small class="err" data-for="biz"></small>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="elena@labodega.com" required>
+          <small class="err" data-for="email"></small>
+        </div>
+        <div class="field">
+          <label for="msg">What would you like to stock?</label>
+          <textarea id="msg" name="msg" rows="3" placeholder="Gordal olives, pulses, olive oil..."></textarea>
+          <small class="hint">Optional. A line or two is plenty.</small>
+        </div>
+        <button class="btn btn-red btn-block" type="submit"><span>Send enquiry</span><i class="btn-ico"><svg viewBox="0 0 24 24"><use href="#arrow"/></svg></i></button>
+        <p class="form-ok" id="formOk" hidden>Gracias. Your enquiry is ready to send.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="foot-logo"><svg viewBox="0 0 200 260" aria-hidden="true"><use href="#olive"/></svg>Perelló</div>
+      <p>Spanish Simplicity Since 1964.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul><li><a href="#story">Story</a></li><li><a href="#varieties">Olives</a></li><li><a href="#range">Range</a></li><li><a href="#recipes">Recipes</a></li></ul>
+    </div>
+    <div>
+      <h4>Buy</h4>
+      <ul><li><a href="#stockists">Where to buy</a></li><li><a href="#trade">Trade customers</a></li><li><a href="https://perellofoods.com" target="_blank" rel="noopener">perellofoods.com</a></li></ul>
+    </div>
+  </div>
+  <div class="foot-giant" aria-hidden="true">Perelló</div>
+  <div class="wrap foot-base"><span>&copy; Perelló Foods. Stewarded by Brindisa.</span><span>Concept website</span></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
